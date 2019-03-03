@@ -25,3 +25,22 @@ VALUES ("iPad", "Electronics", 700.00, 10),
 ("iPad Case", "Electronics", 50.99, 100),
 ("Bath towels", "Home", 39.99, 72),
 ("Leather Wheel protector", "Automobile", 30.00, 107);
+
+
+
+CREATE TABLE Departments (
+	department_id INT(10) AUTO_INCREMENT NOT NULL,
+	department_name VARCHAR(100) NOT NULL,
+	over_head_costs DECIMAL(10,2) NOT NULL,
+	product_sales DECIMAL(10,2),
+	total_profit DECIMAL(10,2), NOT NULL,
+	PRIMARY KEY(department_id)
+);
+
+INSERT INTO Departments (department_name, over_head_costs)
+VALUES ('Electronics', 1000),
+('Music', 2000),
+('Home', 500),
+('Automobile', 200),
+('Games', 100);
+
